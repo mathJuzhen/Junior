@@ -2,87 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3377edd-5275-4134-8bca-3475650108a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/JavaWeb_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/f09b5c1d-0160-407c-83bf-5386a29e61ca.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java Web应用开发软件--长沙学院课程设计指导书规范.doc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaWeb课程设计.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/学号姓名Java Web应用开发软件-课程设计说明书（已包含任务书）.doc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/arquillianContainers.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/manage_finances_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/794860b6-f81f-4eef-84cc-b671b4283db3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Arquillian_JUnit_Release.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/exportToHTML/test/client.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage finances.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/manage_finances_jar/arquillian-config-api-1.4.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/manage_finances_jar/arquillian-config-impl-base-1.4.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/manage_finances_jar/arquillian-config-spi-1.4.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/manage_finances_jar/arquillian-container-impl-base-1.4.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/manage_finances_jar/arquillian-container-spi-1.4.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/manage_finances_jar/arquillian-container-test-api-1.4.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/manage_finances_jar/arquillian-container-test-impl-base-1.4.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/manage_finances_jar/arquillian-container-test-spi-1.4.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/manage_finances_jar/arquillian-core-api-1.4.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/manage_finances_jar/arquillian-core-impl-base-1.4.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/manage_finances_jar/arquillian-core-spi-1.4.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/manage_finances_jar/arquillian-junit-container-1.4.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/manage_finances_jar/arquillian-junit-core-1.4.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/manage_finances_jar/arquillian-test-api-1.4.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/manage_finances_jar/arquillian-test-impl-base-1.4.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/manage_finances_jar/arquillian-test-spi-1.4.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/manage_finances_jar/hamcrest-core-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/manage_finances_jar/junit-4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/manage_finances_jar/manage finances.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/manage_finances_jar/mysql-connector-java-5.1.46.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/manage_finances_jar/shrinkwrap-api-1.2.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/manage_finances_jar/shrinkwrap-descriptors-api-base-2.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/manage_finances_jar/shrinkwrap-descriptors-spi-2.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/manage_finances_jar/shrinkwrap-impl-base-1.2.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/manage_finances_jar/shrinkwrap-spi-1.2.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/manage finances/Data/DataSearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/manage finances/Data/DatabaseConnection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/manage finances/GUI/Bookkeeping.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/manage finances/GUI/Delete.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/manage finances/GUI/Registered.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/manage finances/GUI/ShowMessage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/manage finances/GUI/TypeBill.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/manage finances/GUI/Welcome$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/manage finances/GUI/Welcome.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/manage finances/GUI/bill.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/manage finances/log/log.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/manage finances/mysql/mysql.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/manage finances/test/bill.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/manage finances/test/bookkeeping.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/manage finances/test/client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/manage finances/test/delete.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/manage finances/test/registered.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data/DataSearch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data/DatabaseConnection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/Bookkeeping.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/Delete.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/Registered.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/ShowMessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/TypeBill.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/Welcome.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/bill.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/log/log.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mysql/mysql.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/bill.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/bookkeeping.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/delete.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/registered.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -113,24 +34,51 @@
     </expand>
     <select />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="JavaWeb课程设计" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
-              <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+              <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Test.java" />
+      </list>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -157,17 +105,26 @@
     <option name="width" value="1400" />
     <option name="height" value="820" />
   </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="homework" type="b2602c69:ProjectViewProjectNode" />
               <item name="homework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="homework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="homework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="homework" type="b2602c69:ProjectViewProjectNode" />
@@ -179,7 +136,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -192,7 +148,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -244,17 +200,26 @@
       <workItem from="1557559495077" duration="93000" />
       <workItem from="1557559639191" duration="720000" />
       <workItem from="1558269404343" duration="68000" />
+      <workItem from="1558272802571" duration="976000" />
     </task>
+    <task id="LOCAL-00001" summary="test commit">
+      <created>1558273188539</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1558273188539</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2614000" />
+    <option name="totallyTimeSpent" value="3590000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49914724" visible="true" weight="0.2054429" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49914724" visible="true" weight="0.20757738" />
       <window_info id="Structure" order="1" sideWeight="0.5004936" side_tool="true" weight="0.27001068" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -282,13 +247,24 @@
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.14727855" />
+      <window_info active="true" anchor="right" id="Database" order="6" visible="true" weight="0.14727855" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="test commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="test commit" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -311,7 +287,14 @@
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
-          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
