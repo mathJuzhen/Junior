@@ -1,10 +1,10 @@
 package DatabaseAccess;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.Objects;
 import java.util.Properties;
 
 /**
@@ -26,8 +26,10 @@ public class DatabaseAccess{
 	private static void init(){
 		Properties params = new Properties();
 		String configFile = "Database.properties";
+		InputStream input = DatabaseAccess.class.getClassLoader().getResourceAsStream(configFile);
 		try {
-			params.load(Objects.requireNonNull(DatabaseAccess.class.getClassLoader().getResourceAsStream(configFile)));
+			assert input != null;
+			params.load(input);
 		}catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -43,11 +45,9 @@ public class DatabaseAccess{
 		try {
 			Class.forName(driver);
 			connection = DriverManager.getConnection(url, username, passWord);
-
 		}catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
 		}
 		return connection;
 	}
-
 }

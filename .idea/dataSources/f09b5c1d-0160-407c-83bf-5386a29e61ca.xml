@@ -1169,8 +1169,9 @@
     </column>
     <column id="295" parent="283" name="id">
       <Position>1</Position>
-      <DataType>int(13)|0s</DataType>
+      <DataType>int(13) unsigned|0s</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="296" parent="283" name="relation">
@@ -1197,78 +1198,96 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="300" parent="283" name="PRIMARY">
+    <column id="300" parent="283" name="imagpath">
+      <Position>6</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="301" parent="283" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="301" parent="284" name="type">
+    <column id="302" parent="284" name="id">
       <Position>1</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>int(13)|0s</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="302" parent="284" name="brand">
+    <column id="303" parent="284" name="type">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="303" parent="285" name="productID">
+    <column id="304" parent="284" name="brand">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="305" parent="284" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="306" parent="285" name="productID">
       <Position>1</Position>
       <DataType>int(13)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="304" parent="285" name="userID">
+    <column id="307" parent="285" name="userID">
       <Position>2</Position>
       <DataType>int(13)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="305" parent="286" name="type">
+    <column id="308" parent="286" name="type">
       <Position>1</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="306" parent="286" name="PRIMARY">
+    <key id="309" parent="286" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>type</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="307" parent="287" name="id">
+    <column id="310" parent="287" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="308" parent="287" name="name">
+    <column id="311" parent="287" name="name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="309" parent="287" name="password">
+    <column id="312" parent="287" name="password">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="310" parent="287" name="phonenumber">
+    <column id="313" parent="287" name="phonenumber">
       <Position>4</Position>
-      <DataType>int(13)|0s</DataType>
+      <DataType>varchar(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="311" parent="287" name="email">
+    <column id="314" parent="287" name="email">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="312" parent="287" name="PRIMARY">
+    <key id="315" parent="287" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
