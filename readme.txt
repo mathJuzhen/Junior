@@ -1,0 +1,4 @@
+大概逻辑：用户从首页登录或者注册，登录凭证为手机号与密码，登陆后根据手机号从数据库中找到该用户数据
+然后生成user对象，存于session中，同时从数据库的购物车表中读出该用户购物车数据，根据购物车中的Pid
+在product表中中找到该产品具体信息，然后生成shoppcart对象，shopcart包含一个user对象及一个hashmap，hashmap以产品id即Pid作为键，
+product对象作为值。
