@@ -7,4 +7,6 @@ package dao;
  * @Description: 排序实现类
  */
 public class SortDao{
+	//按照价格排序
+	/*public ArrayList<>*/
 }

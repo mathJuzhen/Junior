@@ -37,7 +37,7 @@ public class Product implements TableToClass{
 	public Product(int id){
 		Id = id;
 		Connection connection = DatabaseAccess.getConnection();
-		String sql = "select * from shop.user where id = " + Id;
+		String sql = "select * from shop.product where id = " + Id;
 		Statement statement;
 		try {
 			statement = connection.createStatement();
@@ -121,4 +121,5 @@ public class Product implements TableToClass{
 		}
 		return productItems;
 	}
+
 }

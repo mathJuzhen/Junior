@@ -1,7 +1,11 @@
 package bean;
 
+import DatabaseAccess.DatabaseAccess;
+
+import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 /**
  * @program: homework
@@ -25,6 +29,26 @@ public class User implements TableToClass{
 
 	public User(){
 	}
+
+	public User(int id){
+		Id = id;
+		Connection connection = DatabaseAccess.getConnection();
+		String sql = "select * from shop.user where id = " + Id;
+		Statement statement;
+		try {
+			statement = connection.createStatement();
+			ResultSet resultSet = statement.executeQuery(sql);
+			while (resultSet.next()) {
+				this.setPassWord(resultSet.getString("password"));
+				this.setPhoneNumber(resultSet.getString("phonenumber"));
+				this.setEamil(resultSet.getString("email"));
+				this.setName(resultSet.getString("name"));
+			}
+		}catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
 
 	public String getName(){
 		return name;
@@ -83,4 +107,5 @@ public class User implements TableToClass{
 		}
 		return user;
 	}
+
 }

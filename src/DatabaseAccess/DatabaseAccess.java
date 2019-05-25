@@ -43,11 +43,13 @@ public class DatabaseAccess{
 	public static Connection getConnection(){
 		Connection connection = null;
 		try {
-			Class.forName(driver);
 			connection = DriverManager.getConnection(url, username, passWord);
-		}catch (ClassNotFoundException | SQLException e) {
+			if (connection != null)
+				System.out.println("连接成功");
+		}catch (SQLException e) {
 			e.printStackTrace();
 		}
 		return connection;
 	}
+
 }

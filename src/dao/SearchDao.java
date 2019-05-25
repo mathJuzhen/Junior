@@ -1,8 +1,5 @@
 package dao;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-
 /**
  * @program: homework
  * @Date: 2019/5/25 0:20
@@ -10,8 +7,8 @@ import java.sql.ResultSet;
  * @Description: 搜索实现类
  */
 public class SearchDao{
-	public ResultSet search(String request){
+	/*public ResultSet search(String request){
 		String sql = "";
-		Connection connection =
-	}
+		Connection connection ;
+	}*/
 }

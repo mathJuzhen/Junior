@@ -1,5 +1,7 @@
 package bean;
 
+import dao.ProductDao;
+
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -33,17 +35,23 @@ public class ShopCart implements TableToClass{
 	public void add(int pID){
 		Product product = new Product(pID);
 		this.shopcat.put(pID, product);
+		ProductDao productDao = new ProductDao();
+		productDao.insertShopCart(this.user, product);
 	}
 
 	//将商品从购物车移除
 	public void remove(int pID){
 		Product product = new Product(pID);
 		this.shopcat.remove(pID, product);
+		ProductDao productDao = new ProductDao();
+		productDao.removeShopCart(this.user, product);
 	}
 
 	//清除购物车
 	public void empty(){
 		this.shopcat.clear();
+		ProductDao productDao = new ProductDao();
+		productDao.emptyShopCart(this.user);
 	}
 
 	//计算购物车内总价格
