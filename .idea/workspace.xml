@@ -7,34 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3377edd-5275-4134-8bca-3475650108a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/servlet/LogoutServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlet/RegisterServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlet/SearchServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlet/ShopCartServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlet/SortServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlet/findAllProductServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlet/showShopCartServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/AddShopCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/EmptyShopCartTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/LoginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/RegisterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/RemoveShopCartTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/SearchTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/ShowAllProductTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/ShowShopCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/SortTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/Login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/showProduct.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/showShopCart.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DatabaseAccess/DatabaseAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatabaseAccess/DatabaseAccess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bean/ShopCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean/ShopCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/ProductDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/RegisteredDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/RegisteredDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/SearchDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/SearchDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/SortDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/SortDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/LoginServlet.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -148,7 +121,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/RemoveShopCartTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="476">
-              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -159,8 +132,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/EmptyShopCartTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+            <state relative-caret-position="543">
+              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -181,7 +154,7 @@
         <entry file="file://$PROJECT_DIR$/src/bean/User.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="377">
-              <caret line="51" column="81" selection-start-line="51" selection-start-column="81" selection-end-line="51" selection-end-column="81" />
+              <caret line="54" column="85" selection-start-line="54" selection-start-column="85" selection-end-line="54" selection-end-column="85" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -705,7 +678,7 @@
       <workItem from="1558847170669" duration="15877000" />
       <workItem from="1558874925428" duration="3982000" />
       <workItem from="1558879176760" duration="482000" />
-      <workItem from="1558879693792" duration="1345000" />
+      <workItem from="1558879693792" duration="1656000" />
     </task>
     <task id="LOCAL-00001" summary="test commit">
       <created>1558273188539</created>
@@ -756,17 +729,24 @@
       <option name="project" value="LOCAL" />
       <updated>1558793202044</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="servlet写完了，不过还没测试，页面还没开始，排序啊，搜索啊，也写完了，测试也过了">
+      <created>1558881334718</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1558881334718</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77771000" />
+    <option name="totallyTimeSpent" value="78082000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49914724" visible="true" weight="0.20170757" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49914724" visible="true" weight="0.20170757" />
       <window_info id="Structure" order="1" sideWeight="0.5004936" side_tool="true" weight="0.27001068" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -776,7 +756,7 @@
       <window_info id="Web" order="7" sideWeight="0.5004583" side_tool="true" weight="0.29082176" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32922733" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24412094" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24412094" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39977604" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -891,7 +871,8 @@
     <MESSAGE value="登录注册实现，找到所有商品实现，界面还没开始，找到部分商品实现，购物车基本实现，但增删操作还未与数据库存起来" />
     <MESSAGE value="更新readme.txt文件" />
     <MESSAGE value="实现购物车中商品的增加，移除，清空购物车" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现购物车中商品的增加，移除，清空购物车" />
+    <MESSAGE value="servlet写完了，不过还没测试，页面还没开始，排序啊，搜索啊，也写完了，测试也过了" />
+    <option name="LAST_COMMIT_MESSAGE" value="servlet写完了，不过还没测试，页面还没开始，排序啊，搜索啊，也写完了，测试也过了" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1221,7 +1202,7 @@
     <entry file="file://$PROJECT_DIR$/src/bean/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
-          <caret line="51" column="81" selection-start-line="51" selection-start-column="81" selection-end-line="51" selection-end-column="81" />
+          <caret line="54" column="85" selection-start-line="54" selection-start-column="85" selection-end-line="54" selection-end-column="85" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1268,7 +1249,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/RemoveShopCartTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1277,8 +1258,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/EmptyShopCartTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        <state relative-caret-position="543">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
