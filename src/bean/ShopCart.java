@@ -1,8 +1,11 @@
 package bean;
 
-import dao.ProductDao;
+import DatabaseAccess.DatabaseAccess;
 
+import java.sql.Connection;
 import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -16,11 +19,9 @@ public class ShopCart implements TableToClass{
 	private User user;
 	private HashMap<Integer,Product> shopcat;//<产品id，产品>
 
-	public ShopCart(HashMap<Integer,Product> shopcat){
-		this.shopcat = shopcat;
-	}
-
 	public ShopCart(){
+		this.user = new User();
+		this.shopcat = new HashMap<>();
 	}
 
 	public User getUser(){
@@ -31,27 +32,21 @@ public class ShopCart implements TableToClass{
 		this.user = user;
 	}
 
-	//将产品加入购物车
-	public void add(int pID){
-		Product product = new Product(pID);
-		this.shopcat.put(pID, product);
-		ProductDao productDao = new ProductDao();
-		productDao.insertShopCart(this.user, product);
-	}
 
-	//将商品从购物车移除
-	public void remove(int pID){
-		Product product = new Product(pID);
-		this.shopcat.remove(pID, product);
-		ProductDao productDao = new ProductDao();
-		productDao.removeShopCart(this.user, product);
-	}
-
-	//清除购物车
-	public void empty(){
-		this.shopcat.clear();
-		ProductDao productDao = new ProductDao();
-		productDao.emptyShopCart(this.user);
+	public ShopCart(User user){
+		ShopCart shopCart = null;
+		Connection connection = DatabaseAccess.getConnection();
+		String sql = "SELECT * from shop.product,shop.shoppingcart where userID =" + user.getId() + " and productID = product.id";
+		try {
+			Statement statement = connection.createStatement();
+			ResultSet resultSet = statement.executeQuery(sql);
+			shopCart = this.tableToClass(resultSet);
+		}catch (SQLException e) {
+			e.printStackTrace();
+		}
+		assert shopCart != null;
+		this.setShopcat(shopCart.getShopcat());
+		this.setUser(user);
 	}
 
 	//计算购物车内总价格
@@ -65,12 +60,21 @@ public class ShopCart implements TableToClass{
 
 	@Override
 	public ShopCart tableToClass(ResultSet resultSet){
+		ShopCart shopCart = new ShopCart();
 		ArrayList<Product> products;
 		Product product = new Product();
 		products = product.tableToClass(resultSet);
 		for (Product product1 : products) {
-			this.shopcat.put(product1.getId(), product1);
+			shopCart.shopcat.put(product1.getId(), product1);
 		}
-		return this;
+		return shopCart;
+	}
+
+	public HashMap<Integer,Product> getShopcat(){
+		return shopcat;
+	}
+
+	public void setShopcat(HashMap<Integer,Product> shopcat){
+		this.shopcat = shopcat;
 	}
 }

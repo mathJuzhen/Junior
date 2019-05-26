@@ -44,8 +44,6 @@ public class DatabaseAccess{
 		Connection connection = null;
 		try {
 			connection = DriverManager.getConnection(url, username, passWord);
-			if (connection != null)
-				System.out.println("连接成功");
 		}catch (SQLException e) {
 			e.printStackTrace();
 		}

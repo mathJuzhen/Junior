@@ -49,6 +49,24 @@ public class User implements TableToClass{
 		}
 	}
 
+	public User(String name){
+		this.name = name;
+		Connection connection = DatabaseAccess.getConnection();
+		String sql = "select * from shop.user where name = '" + this.getName() + "'";
+		Statement statement;
+		try {
+			statement = connection.prepareStatement(sql);
+			ResultSet resultSet = statement.executeQuery(sql);
+			while (resultSet.next()) {
+				this.setPassWord(resultSet.getString("password"));
+				this.setPhoneNumber(resultSet.getString("phonenumber"));
+				this.setEamil(resultSet.getString("email"));
+				this.setId(resultSet.getInt("id"));
+			}
+		}catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
 
 	public String getName(){
 		return name;

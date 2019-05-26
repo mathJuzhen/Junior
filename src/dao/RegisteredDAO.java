@@ -26,10 +26,8 @@ public class RegisteredDAO{
 			int i = statement.executeUpdate();
 			if (i == 1)
 				isRegistered = true;
-			System.out.println("注册成功");
 		}catch (SQLException e) {
 			e.printStackTrace();
-			System.out.println("注册失败");
 		}
 		return isRegistered;
 	}

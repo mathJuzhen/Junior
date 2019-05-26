@@ -2,6 +2,7 @@ package dao;
 
 import DatabaseAccess.DatabaseAccess;
 import bean.Product;
+import bean.ShopCart;
 import bean.User;
 
 import java.sql.Connection;
@@ -35,25 +36,17 @@ public class ProductDao{
 	}
 
 	//展示部分商品
-	public ArrayList<Product> findSomeProduct(String sq){
-		ArrayList<Product> products = new ArrayList<>();
-		Connection connection = DatabaseAccess.getConnection();
-		try {
-			Product product = new Product();
-			Statement statement;
-			statement = connection.createStatement();
-			ResultSet resultSet = statement.executeQuery(sq);
-			products = product.tableToClass(resultSet);
-		}catch (SQLException ex) {
-			ex.printStackTrace();
-		}
+	public ArrayList<Product> findSomeProduct(ResultSet resultSet){
+		ArrayList<Product> products;
+		Product product = new Product();
+		products = product.tableToClass(resultSet);
 		return products;
 	}
 
 	//将商品加入购物车
-	public void insertShopCart(User user, Product product){
+	public void insertShopCart(User user, int pID){
 		Connection connection = DatabaseAccess.getConnection();
-		String sql = "insert into shop.shoppingcart values(" + user.getId() + "," + product.getId() + ")";
+		String sql = "insert into shop.shoppingcart values(" + user.getId() + "," + pID + ")";
 		Statement statement;
 		try {
 			statement = connection.createStatement();
@@ -64,9 +57,9 @@ public class ProductDao{
 	}
 
 	//将商品从购物车中移除
-	public void removeShopCart(User user, Product product){
+	public void removeShopCart(User user, int pID){
 		Connection connection = DatabaseAccess.getConnection();
-		String sql = "delete from shop.shoppingcart where productID = " + product.getId() + " AND userID =" + user.getId();
+		String sql = "delete from shop.shoppingcart where productID = " + pID + " AND userID =" + user.getId();
 		Statement statement;
 		try {
 			statement = connection.createStatement();
@@ -89,4 +82,19 @@ public class ProductDao{
 		}
 	}
 
+	//展示购物车
+	public ArrayList<Product> showShopCart(ShopCart shopCart){
+		ArrayList<Product> products = new ArrayList<>();
+		for (Product product : shopCart.getShopcat().values()) {
+			Product product1 = new Product();
+			product1.setId(product.getId());
+			product1.setName(product.getName());
+			product1.setPrice(product.getPrice());
+			product1.setVolume(product.getVolume());
+			product1.setRelation(product.getRelation());
+			product1.setImagpath(product.getImagpath());
+			products.add(product1);
+		}
+		return products;
+	}
 }
