@@ -6,16 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3377edd-5275-4134-8bca-3475650108a6" name="Default Changelist" comment="servlet写完了，不过还没测试，页面还没开始，排序啊，搜索啊，也写完了，测试也过了">
-      <change afterPath="$PROJECT_DIR$/src/test/DataAccessTest.java" afterDir="false" />
+    <list default="true" id="f3377edd-5275-4134-8bca-3475650108a6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/web/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DatabaseAccess/DatabaseAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DatabaseAccess/DatabaseAccess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/RegisterServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/RegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/RegisterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/Register.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/Register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -101,11 +95,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" selection-end-line="28" selection-end-column="7" />
+            <state relative-caret-position="204">
+              <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/css/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/Register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -139,15 +151,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/Register.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -396,6 +399,12 @@
               <item name="homework" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="homework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="homework" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -589,7 +598,7 @@
       <workItem from="1558879176760" duration="482000" />
       <workItem from="1558879693792" duration="1656000" />
       <workItem from="1558881464677" duration="242000" />
-      <workItem from="1558916139006" duration="3976000" />
+      <workItem from="1558916139006" duration="4504000" />
     </task>
     <task id="LOCAL-00001" summary="test commit">
       <created>1558273188539</created>
@@ -654,17 +663,23 @@
       <option name="project" value="LOCAL" />
       <updated>1558881528352</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="登录注册还差个AJAX">
+      <created>1558920384795</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1558920384795</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82300000" />
+    <option name="totallyTimeSpent" value="82828000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49757868" visible="true" weight="0.20597652" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49757868" visible="true" weight="0.20597652" />
       <window_info id="Structure" order="1" sideWeight="0.5024213" side_tool="true" weight="0.22091782" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -674,7 +689,7 @@
       <window_info id="Web" order="7" sideWeight="0.5004583" side_tool="true" weight="0.29082176" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32922733" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24412094" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24412094" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39977604" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -790,7 +805,8 @@
     <MESSAGE value="更新readme.txt文件" />
     <MESSAGE value="实现购物车中商品的增加，移除，清空购物车" />
     <MESSAGE value="servlet写完了，不过还没测试，页面还没开始，排序啊，搜索啊，也写完了，测试也过了" />
-    <option name="LAST_COMMIT_MESSAGE" value="servlet写完了，不过还没测试，页面还没开始，排序啊，搜索啊，也写完了，测试也过了" />
+    <MESSAGE value="登录注册还差个AJAX" />
+    <option name="LAST_COMMIT_MESSAGE" value="登录注册还差个AJAX" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -800,7 +816,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/resource.properties" />
     <entry file="file://$PROJECT_DIR$/resources/jdbc.properties" />
     <entry file="file://$PROJECT_DIR$/.project" />
     <entry file="file://$PROJECT_DIR$/homework.userlibraries" />
@@ -1181,17 +1196,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.html">
+    <entry file="file://$PROJECT_DIR$/web/Register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" selection-end-line="28" selection-end-column="7" />
+        <state relative-caret-position="544">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/Register.html">
+    <entry file="file://$PROJECT_DIR$/web/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        <state relative-caret-position="204">
+          <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
         </state>
       </provider>
     </entry>
