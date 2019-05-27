@@ -11,8 +11,8 @@ import dao.RegisteredDAO;
 public class RegisterTest{
 	public static void main(String[] args){
 		RegisteredDAO dao = new RegisteredDAO();
-		String username = "张飞";
-		String password = null;
+		String username = "伊文斯";
+		String password = "225566";
 		String number = "13973879338";
 		String email = "761764092@163.com";
 		if (dao.isRegistered(username, password, number, email)) {

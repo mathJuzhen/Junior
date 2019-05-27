@@ -23,7 +23,7 @@ public class RegisterServlet extends HttpServlet{
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException{
-		resp.setContentType("text/html;charset = ust-8");
+		resp.setContentType("text/html;charset = utf-8");
 		String userName;
 		String passWord;
 		String phoneNumber;
@@ -31,7 +31,7 @@ public class RegisterServlet extends HttpServlet{
 		String dhtml;
 		userName = req.getParameter("userName");
 		passWord = req.getParameter("passWord");
-		phoneNumber = req.getParameter("phoneNumber");
+		phoneNumber = req.getParameter("passWord");
 		email = req.getParameter("email");
 		RegisteredDAO dao = new RegisteredDAO();
 		boolean isRegistered = dao.isRegistered(userName, passWord, phoneNumber, email);

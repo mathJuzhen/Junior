@@ -22,7 +22,7 @@ import java.io.IOException;
 public class LoginServlet extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException{
-		resp.setContentType("text/html;charset = ust-8");
+		resp.setContentType("text/html;charset = utf-8");
 		LoginDao loginDao = new LoginDao();
 		String userName = req.getParameter("userName");
 		String passWord = req.getParameter("PassWord");
@@ -35,7 +35,7 @@ public class LoginServlet extends HttpServlet{
 			ShopCart shopCart = new ShopCart(user);
 			session.setAttribute("User", user);
 			session.setAttribute("shopCart", shopCart);
-			req.getRequestDispatcher("index.jsp").forward(req, resp);
+			//	req.getRequestDispatcher("index.jsp").forward(req, resp);
 		}else dthtml = "登录失败";
 		resp.getWriter().print(dthtml);
 	}

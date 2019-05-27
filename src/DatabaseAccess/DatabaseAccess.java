@@ -43,8 +43,9 @@ public class DatabaseAccess{
 	public static Connection getConnection(){
 		Connection connection = null;
 		try {
+			Class.forName(driver);
 			connection = DriverManager.getConnection(url, username, passWord);
-		}catch (SQLException e) {
+		}catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
 		}
 		return connection;
