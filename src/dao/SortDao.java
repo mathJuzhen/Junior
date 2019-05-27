@@ -22,7 +22,7 @@ public class SortDao{
 		ArrayList<Product> products = new ArrayList<>();
 		try {
 			Statement statement = connection.createStatement();
-			String sql = "select * from shop.product order by " + howToSort;
+			String sql = "select * from shop.product order by " + howToSort + " desc ";
 			ResultSet resultSet = statement.executeQuery(sql);
 			Product product = new Product();
 			products = product.tableToClass(resultSet);

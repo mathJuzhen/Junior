@@ -31,7 +31,7 @@ public class RegisterServlet extends HttpServlet{
 		String dhtml;
 		userName = req.getParameter("userName");
 		passWord = req.getParameter("passWord");
-		phoneNumber = req.getParameter("passWord");
+		phoneNumber = req.getParameter("phoneNumber");
 		email = req.getParameter("email");
 		RegisteredDAO dao = new RegisteredDAO();
 		boolean isRegistered = dao.isRegistered(userName, passWord, phoneNumber, email);

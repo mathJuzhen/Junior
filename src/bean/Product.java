@@ -21,6 +21,24 @@ public class Product implements TableToClass{
 	private Double price;
 	private int volume;
 	private String imagpath;
+	private String brand;
+	private String type;
+
+	public String getBrand(){
+		return brand;
+	}
+
+	public void setBrand(String brand){
+		this.brand = brand;
+	}
+
+	public String getType(){
+		return type;
+	}
+
+	public void setType(String type){
+		this.type = type;
+	}
 
 	public Product(int id, int relation, String name, Double price, int volume, String imagpath){
 		Id = id;

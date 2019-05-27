@@ -35,7 +35,7 @@ public class LoginServlet extends HttpServlet{
 			ShopCart shopCart = new ShopCart(user);
 			session.setAttribute("User", user);
 			session.setAttribute("shopCart", shopCart);
-			//	req.getRequestDispatcher("index.jsp").forward(req, resp);
+			req.getRequestDispatcher("findAllProductServlet").forward(req, resp);
 		}else dthtml = "登录失败";
 		resp.getWriter().print(dthtml);
 	}

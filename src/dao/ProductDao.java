@@ -5,10 +5,7 @@ import bean.Product;
 import bean.ShopCart;
 import bean.User;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 
 /**
@@ -22,7 +19,7 @@ public class ProductDao{
 	public ArrayList<Product> findAllProduct(){
 		ArrayList<Product> products = new ArrayList<>();
 		Connection connection = DatabaseAccess.getConnection();
-		String sql = "select * from shop.product";
+		String sql = "select * from shop.product order by relation";
 		try {
 			Product product = new Product();
 			Statement statement;
@@ -67,6 +64,30 @@ public class ProductDao{
 		}catch (SQLException e) {
 			e.printStackTrace();
 		}
+	}
+
+	//找到产品信息
+	public Product findProduct(int pId){
+		Connection connection = DatabaseAccess.getConnection();
+		String sql = "select * from shop.product,shop.relation where product.relation = relation.id and product.id = ?";
+		Product product = new Product();
+		try {
+			PreparedStatement statement = connection.prepareStatement(sql);
+			statement.setInt(1, pId);
+			ResultSet resultSet = statement.executeQuery();
+			while (resultSet.next()) {
+				product.setImagpath(resultSet.getString("imagpath"));
+				product.setVolume(resultSet.getInt("volume"));
+				product.setPrice(resultSet.getDouble("price"));
+				product.setName(resultSet.getString("name"));
+				product.setBrand(resultSet.getString("brand"));
+				product.setType(resultSet.getString("type"));
+				product.setId(resultSet.getInt("product.id"));
+			}
+		}catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return product;
 	}
 
 	//清空购物车

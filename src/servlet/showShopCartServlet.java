@@ -12,7 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.ArrayList;
-
 /**
  * @program: homework
  * @Date: 2019/5/26 16:55
@@ -28,6 +27,7 @@ public class showShopCartServlet extends HttpServlet{
 		ProductDao dao = new ProductDao();
 		Double totalPrice = shopCart.totalPrice();
 		ArrayList<Product> products = dao.showShopCart(shopCart);
+		req.setAttribute("totalPrice", totalPrice);
 		req.setAttribute("shopCart", products);
 		req.getRequestDispatcher("showShopCart.jsp").forward(req, resp);
 	}
