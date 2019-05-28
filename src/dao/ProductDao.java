@@ -66,6 +66,23 @@ public class ProductDao{
 		}
 	}
 
+	//推荐产品
+	public ArrayList<Product> recommendProduct(Product product){
+		Connection connection = DatabaseAccess.getConnection();
+		ArrayList<Product> products = new ArrayList<>();
+		String sql = "select product.id, relation, name, price, volume, imagpath,brand,type from shop.product,shop.relation where product.relation = relation.id and product.id <>? and relation.type = ?";
+		try {
+			PreparedStatement statement = connection.prepareStatement(sql);
+			statement.setInt(1, product.getId());
+			statement.setString(2, product.getType());
+			ResultSet resultSet = statement.executeQuery();
+			products = product.tableToClassWithRelation(resultSet);
+		}catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return products;
+	}
+
 	//找到产品信息
 	public Product findProduct(int pId){
 		Connection connection = DatabaseAccess.getConnection();

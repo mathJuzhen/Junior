@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
 
 /**
  * @program: homework
@@ -29,6 +30,8 @@ public class findProductInfoServlet extends HttpServlet{
 		int pid = Integer.valueOf(req.getParameter("pid"));
 		ProductDao dao = new ProductDao();
 		Product product = dao.findProduct(pid);
+		ArrayList<Product> products = dao.recommendProduct(product);
+		req.setAttribute("recommend", products);
 		req.setAttribute("product", product);
 		req.getRequestDispatcher("showProductInfo.jsp").forward(req, resp);
 	}

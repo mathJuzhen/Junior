@@ -140,4 +140,24 @@ public class Product implements TableToClass{
 		return productItems;
 	}
 
+	public ArrayList<Product> tableToClassWithRelation(ResultSet resultSet){
+		ArrayList<Product> productItems = new ArrayList<>();
+		try {
+			while (resultSet.next()) {
+				Product product = new Product();
+				product.setId(resultSet.getInt("id"));
+				product.setName(resultSet.getString("name"));
+				product.setPrice(resultSet.getDouble("price"));
+				product.setVolume(resultSet.getInt("volume"));
+				product.setRelation(resultSet.getInt("relation"));
+				product.setImagpath(resultSet.getString("imagpath"));
+				product.setBrand(resultSet.getString("brand"));
+				product.setType(resultSet.getString("type"));
+				productItems.add(product);
+			}
+		}catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return productItems;
+	}
 }

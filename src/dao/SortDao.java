@@ -1,13 +1,9 @@
 package dao;
 
-import DatabaseAccess.DatabaseAccess;
 import bean.Product;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.Comparator;
 
 /**
  * @program: homework
@@ -17,19 +13,12 @@ import java.util.ArrayList;
  */
 public class SortDao{
 	//排序
-	public ArrayList<Product> Sort(String howToSort){
-		Connection connection = DatabaseAccess.getConnection();
-		ArrayList<Product> products = new ArrayList<>();
-		try {
-			Statement statement = connection.createStatement();
-			String sql = "select * from shop.product order by " + howToSort + " desc ";
-			ResultSet resultSet = statement.executeQuery(sql);
-			Product product = new Product();
-			products = product.tableToClass(resultSet);
-		}catch (SQLException e) {
-			e.printStackTrace();
-		}
+	public ArrayList<Product> Sort(ArrayList<Product> products, String howToSort){
+		if (howToSort.equals("volume")) {
+			products.sort(Comparator.comparingInt(Product::getVolume));
+		}else if (howToSort.equals("price")) {
+			products.sort((o1, o2) -> (int) (o1.getPrice() - o2.getPrice()));
+		}else products.sort(Comparator.comparingInt(Product::getId));
 		return products;
 	}
-
 }

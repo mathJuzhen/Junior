@@ -15,8 +15,6 @@
 <jsp:include page="Navigationbar.jsp"/>
 <head>
 	<title>商品信息</title>
-	<script src="http://code.jquery.com/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 <div style="text-align: center;">

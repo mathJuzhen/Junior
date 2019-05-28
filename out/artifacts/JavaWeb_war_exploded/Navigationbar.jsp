@@ -5,26 +5,16 @@
   Time: 10:32
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 
 <head>
 	<title></title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
-	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-	<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
-	      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
-	        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-	        crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-<script src="http://code.jquery.com/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
 <nav class="navbar navbar-default" role="navigation">
 	<div class="container-fluid">
 		<div class="navbar-header">
@@ -43,10 +33,37 @@
 				User user = (User) request.getSession().getAttribute("User");
 				String uswerName = user.getName();
 			%>
-			<p class="navbar-text navbar-right"> <%=uswerName%></p>
+			<p class="navbar-text navbar-right"><%=uswerName%>
+			</p>
 			<a href="showShopCartServlet" class="navbar-text navbar-right">购物车</a>
 		</div>
 	</div>
 </nav>
+<div class="dropdown" id="example-navbar-collapse">
+	<ul class="nav nav-tabs">
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+				品牌 <b class="caret"></b>
+			</a>
+			<ul class="dropdown-menu">
+				<li><a href="SearchServlet?key=${"华为"}">华为</a></li>
+				<li><a href="SearchServlet?key=${"苹果"}">苹果</a></li>
+				<li><a href="SearchServlet?key=${"小米"}">小米</a></li>
+				<li><a href="SearchServlet?key=${"三星"}">三星</a></li>
+			</ul>
+		</li>
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+				类型 <b class="caret"></b>
+			</a>
+			<ul class="dropdown-menu">
+				<li><a href="SearchServlet?key=${"手机"}">手机</a></li>
+				<li><a href="SearchServlet?key=${"平板电脑"}">平板电脑</a></li>
+				<li><a href="SearchServlet?key=${"智能手环"}">智能手环</a></li>
+				<li><a href="SearchServlet?key=${"笔记本"}">笔记本</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
 </body>
 </html>
