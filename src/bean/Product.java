@@ -23,6 +23,15 @@ public class Product implements TableToClass{
 	private String imagpath;
 	private String brand;
 	private String type;
+	private int amount;
+
+	public int getAmount(){
+		return amount;
+	}
+
+	public void setAmount(int amount){
+		this.amount = amount;
+	}
 
 	public String getBrand(){
 		return brand;

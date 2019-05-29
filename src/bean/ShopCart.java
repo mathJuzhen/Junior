@@ -49,15 +49,6 @@ public class ShopCart implements TableToClass{
 		this.setUser(user);
 	}
 
-	//计算购物车内总价格
-	public double totalPrice(){
-		double totalPrice = 0;
-		for (Product product : shopcat.values()) {
-			totalPrice += product.getPrice();
-		}
-		return totalPrice;
-	}
-
 	@Override
 	public ShopCart tableToClass(ResultSet resultSet){
 		ShopCart shopCart = new ShopCart();

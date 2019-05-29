@@ -33,7 +33,7 @@
 				<div align="center">名称</div>
 			</td>
 			<td>
-				<div align="center">销量</div>
+				<div align="center">数量</div>
 			</td>
 			<td>
 				<div align="center">价格</div>
@@ -54,7 +54,7 @@
 					<div align="center">${p.name}</div>
 				</td>
 				<td width="12%">
-					<div align="center">${p.volume}</div>
+					<div align="center">${p.amount}</div>
 				</td>
 				<td width="10%">
 					<div align="center">${p.price}</div>

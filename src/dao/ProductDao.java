@@ -120,6 +120,36 @@ public class ProductDao{
 		}
 	}
 
+	//计算购物车内总价格
+	public double totalPrice(ArrayList<Product> products){
+		double totalPrice = 0;
+		for (Product product : products) {
+			totalPrice += product.getPrice() * product.getAmount();
+		}
+		return totalPrice;
+	}
+
+	//取得购物车中商品的数量
+	public ArrayList<Product> getAmount(User user, ArrayList<Product> products){
+		Connection connection = DatabaseAccess.getConnection();
+		int uid = user.getId();
+		String sql = "select COUNT(shop.shoppingcart.productID) from shop.shoppingcart where shop.shoppingcart.userID = ? and shop.shoppingcart.productID = ?";
+		for (Product product : products) {
+			int pid = product.getId();
+			try {
+				PreparedStatement statement = connection.prepareStatement(sql);
+				statement.setInt(1, uid);
+				statement.setInt(2, pid);
+				ResultSet resultSet = statement.executeQuery();
+				while (resultSet.next())
+					product.setAmount(resultSet.getInt(1));
+			}catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		return products;
+	}
+
 	//展示购物车
 	public ArrayList<Product> showShopCart(ShopCart shopCart){
 		ArrayList<Product> products = new ArrayList<>();
@@ -136,3 +166,4 @@ public class ProductDao{
 		return products;
 	}
 }
+

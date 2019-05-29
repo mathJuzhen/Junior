@@ -2,6 +2,7 @@ package servlet;
 
 import bean.Product;
 import bean.ShopCart;
+import bean.User;
 import dao.ProductDao;
 
 import javax.servlet.ServletException;
@@ -23,10 +24,12 @@ public class showShopCartServlet extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
 		HttpSession session = req.getSession();
+		User user = (User) session.getAttribute("User");
 		ShopCart shopCart = (ShopCart) session.getAttribute("shopCart");
 		ProductDao dao = new ProductDao();
-		Double totalPrice = shopCart.totalPrice();
 		ArrayList<Product> products = dao.showShopCart(shopCart);
+		products = dao.getAmount(user, products);
+		Double totalPrice = dao.totalPrice(products);
 		req.setAttribute("totalPrice", totalPrice);
 		req.setAttribute("shopCart", products);
 		req.getRequestDispatcher("showShopCart.jsp").forward(req, resp);
