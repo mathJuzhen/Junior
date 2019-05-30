@@ -18,14 +18,20 @@
 	<script src="http://code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<title>购物车</title>
+	<script language="JavaScript" >
+        function del() {
+            var msg = "您真的确定要删除吗？\n\n请确认！";
+            return confirm(msg) === true;
+        }
+	</script>
 </head>
-<body>
+<body style="background-image: url(imag/bgImg.jpg);background-size: cover ;background-repeat: no-repeat">
 <div style="text-align: center;">
 	<h1>商品列表</h1>
-	<div style="text-align: right"><a href="ShopCartServlet?pid=${p.id}&toDo=${"清空"}">清空购物车</a></div>
-	<table cellspacing="1" cellpadding="0" width="40%" border="0">
+	<div style="text-align: right"><a href="ShopCartServlet?pid=${p.id}&toDo=${"清空"}" onclick="del()">清空购物车</a></div>
+	<table cellspacing="1" cellpadding="10" width="100%" border="0">
 		<tbody>
-		<tr bgcolor="#fba661" height="20">
+		<tr style="" height="50" align="center">
 			<td>
 				<div align="center">编号</div>
 			</td>
@@ -46,7 +52,7 @@
 			</td>
 		</tr>
 		<c:forEach var="p" items="${shopCart}">
-			<tr bgcolor="#f3f3f3" height="25">
+			<tr style="align-items: center" height="100">
 				<td width="10%">
 					<div align="center">${p.id }</div>
 				</td>
@@ -61,13 +67,13 @@
 				</td>
 				<td width="12%">
 					<div align="center">
-						<img height="25" hspace="0" src="<%=path%>/imag/${p.imagpath}" width="83" border="0"
+						<img height="100" hspace="0" src="<%=path%>/imag/${p.imagpath}" width="100" border="0"
 						     alt=""/>
 					</div>
 				</td>
 				<td width="13%">
 					<div align="center">
-						<a href="ShopCartServlet?pid=${p.id}&toDo=${"remove"}">移除</a>
+						<a href="ShopCartServlet?pid=${p.id}&toDo=${"remove"}" onclick="del()">移除</a>
 					</div>
 				</td>
 			</tr>

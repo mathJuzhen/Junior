@@ -18,12 +18,12 @@
 	<script src="js/bootstrap.min.js"></script>
 	<title>Title</title>
 </head>
-<body>
+<body style="background-image: url(imag/bgImg.jpg);background-size: cover ;background-repeat: no-repeat">
 <div style="text-align: center;">
 	<h1>商品信息</h1>
-	<table cellspacing="1" cellpadding="0" width="40%" border="0">
+	<table cellspacing="1" cellpadding="10" width="100%" border="0">
 		<tbody>
-		<tr bgcolor="#fba661" height="20">
+		<tr style="" height="50" align="center">
 			<td>
 				<div align="center">编号</div>
 			</td>
@@ -49,7 +49,7 @@
 				<div align="center">购买</div>
 			</td>
 		</tr>
-		<tr>
+		<tr style="align-items: center" height="100">
 			<td>
 				<div align="center">${product.id}</div>
 			</td>
@@ -79,9 +79,9 @@
 		</tbody>
 	</table>
 	<h1>推荐商品</h1>
-	<table cellspacing="1" cellpadding="0" width="40%" border="0">
+	<table cellspacing="1" cellpadding="10" width="100%" border="0">
 		<tbody>
-		<tr bgcolor="#fba661" height="20">
+		<tr style="" height="50" align="center">
 			<td>
 				<div align="center">编号</div>
 			</td>
@@ -108,7 +108,7 @@
 			</td>
 		</tr>
 		<c:forEach var="p" items="${recommend}">
-			<tr>
+			<tr style="align-items: center" height="100">
 				<td>
 					<div align="center">${p.id}</div>
 				</td>
@@ -128,7 +128,7 @@
 					<div align="center">${p.price}</div>
 				</td>
 				<td>
-					<div align="center"><img height="25" hspace="0" src="<%=path%>/imag/${p.imagpath}" width="83"
+					<div align="center"><img height="100" hspace="0" src="<%=path%>/imag/${p.imagpath}" width="100"
 					                         border="0" alt=""/></div>
 				</td>
 				<td>

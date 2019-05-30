@@ -15,34 +15,35 @@
 <jsp:include page="Navigationbar.jsp"/>
 <head>
 	<title>商品信息</title>
+
 </head>
-<body>
+<body style="background-image: url(imag/bgImg.jpg);background-size: cover ;background-repeat: no-repeat">
 <div style="text-align: center;">
 	<h1>商品列表</h1>
-	<table cellspacing="1" cellpadding="0" width="40%" border="0">
+	<table cellspacing="1" cellpadding="10" width="100%" border="0">
 		<tbody>
-		<tr bgcolor="#fba661" height="20">
-			<td>
-				<div align="center"><a href="SortServlet?key=${"id"}">编号</a></div>
+		<tr style="" height="50" align="center">
+			<td style="align-items: center;">
+				<div><a href="SortServlet?key=${"id"}">编号</a></div>
+			</td>
+			<td style="align-items: center;">
+				<div>名称</div>
+			</td>
+			<td style="align-items: center;">
+				<div><a href="SortServlet?key=${"volume"}">销量</a></div>
+			</td>
+			<td style="align-items: center;">
+				<div><a href="SortServlet?key=${"price"}">价格</a></div>
+			</td>
+			<td style="align-items: center;">
+				<div>图片</div>
 			</td>
 			<td>
-				<div align="center">名称</div>
-			</td>
-			<td>
-				<div align="center"><a href="SortServlet?key=${"volume"}">销量</a></div>
-			</td>
-			<td>
-				<div align="center"><a href="SortServlet?key=${"price"}">价格</a></div>
-			</td>
-			<td>
-				<div align="center">图片</div>
-			</td>
-			<td>
-				<div align="center">购买</div>
+				<div style="align-items: center;">购买</div>
 			</td>
 		</tr>
 		<c:forEach var="p" items="${Products}">
-			<tr bgcolor="#f3f3f3" height="25">
+			<tr style="align-items: center" height="100">
 				<td width="10%">
 					<div align="center"><a href="showProductInfoServlet?pid=${p.id}">${p.id }</a></div>
 				</td>
@@ -57,7 +58,7 @@
 				</td>
 				<td width="12%">
 					<div align="center">
-						<img height="25" hspace="0" src="<%=path%>/imag/${p.imagpath}" width="83" border="0" alt=""/>
+						<img height="100" hspace="0" src="<%=path%>/imag/${p.imagpath}" width="100" border="0" alt=""/>
 					</div>
 				</td>
 				<td width="13%">
