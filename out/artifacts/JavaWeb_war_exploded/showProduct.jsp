@@ -24,19 +24,19 @@
 		<tbody>
 		<tr style="" height="50" align="center">
 			<td style="align-items: center;">
-				<div ><a href="SortServlet?key=${"id"}">编号</a></div>
-			</td>
-			<td style="align-items: center;" >
-				<div >名称</div>
+				<div><a href="SortServlet?key=${"id"}">编号</a></div>
 			</td>
 			<td style="align-items: center;">
-				<div ><a href="SortServlet?key=${"volume"}">销量</a></div>
+				<div>名称</div>
 			</td>
 			<td style="align-items: center;">
-				<div ><a href="SortServlet?key=${"price"}">价格</a></div>
+				<div><a href="SortServlet?key=${"volume"}">销量</a></div>
 			</td>
 			<td style="align-items: center;">
-				<div >图片</div>
+				<div><a href="SortServlet?key=${"price"}">价格</a></div>
+			</td>
+			<td style="align-items: center;">
+				<div>图片</div>
 			</td>
 			<td>
 				<div style="align-items: center;">购买</div>

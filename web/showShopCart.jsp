@@ -28,7 +28,8 @@
 <body style="background-image: url(imag/bgImg.jpg);background-size: cover ;background-repeat: no-repeat">
 <div style="text-align: center;">
 	<h1>商品列表</h1>
-	<div style="text-align: right"><a href="ShopCartServlet?pid=${p.id}&toDo=${"清空"}" onclick="del()">清空购物车</a></div>
+	<div style="text-align: right"><a href="ShopCartServlet?pid=${p.id}&toDo=${"清空"}" onclick="return del()">清空购物车</a>
+	</div>
 	<table cellspacing="1" cellpadding="10" width="100%" border="0">
 		<tbody>
 		<tr style="" height="50" align="center">
@@ -73,7 +74,7 @@
 				</td>
 				<td width="13%">
 					<div align="center">
-						<a href="ShopCartServlet?pid=${p.id}&toDo=${"remove"}" onclick="del()">移除</a>
+						<a href="ShopCartServlet?pid=${p.id}&toDo=${"remove"}">移除</a>
 					</div>
 				</td>
 			</tr>

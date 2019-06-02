@@ -4,7 +4,25 @@
     <title>我的“书屋”</title>
     <link href="css/index.css" rel="stylesheet"/>
 </head>
-<html lang="">
+<script language="javascript">
+    function check() {
+        if (register.userName.value === "") {
+            alert("用户名不能为空!");
+            return false;
+        }
+
+        if (register.passWord.value === "") {
+            alert("密码不能为空");
+            return false;
+        }
+        var email = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
+        var mobile = /^(((13[0-9])|(15[0-9])|(18[0-9]))+\d{8})$/;
+        if (!register.email.value.match(email) && !register.phoneNumber.value.match(mobile)) {
+            alert("格式错误!");
+            return false;
+        }
+    }
+</script>
 <body>
 <img alt="" class="bgImg" src="imag/bgImg.jpg"/>
 <div class="content">
@@ -22,9 +40,8 @@
             邮箱：<label>
                 <input name="email" type="text"/>
             </label><br/>
-            <input type="submit" value="注册"/>
+            <input onclick="return check()" type="submit" value="注册"/>
         </form>
     </div>
 </div>
 </body>
-</html>>

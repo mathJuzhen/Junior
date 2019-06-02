@@ -18,7 +18,7 @@
 	<script src="http://code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<title>购物车</title>
-	<script language="JavaScript" >
+	<script language="JavaScript">
         function del() {
             var msg = "您真的确定要删除吗？\n\n请确认！";
             return confirm(msg) === true;
@@ -28,7 +28,7 @@
 <body style="background-image: url(imag/bgImg.jpg);background-size: cover ;background-repeat: no-repeat">
 <div style="text-align: center;">
 	<h1>商品列表</h1>
-	<div style="text-align: right"><a href="ShopCartServlet?pid=${p.id}&toDo=${"清空"}" onclick="del()">清空购物车</a></div>
+	<div style="text-align: right"><a href="ShopCartServlet?pid=${p.id}&toDo=${"清空"}" onclick="return del()">清空购物车</a></div>
 	<table cellspacing="1" cellpadding="10" width="100%" border="0">
 		<tbody>
 		<tr style="" height="50" align="center">
@@ -73,7 +73,7 @@
 				</td>
 				<td width="13%">
 					<div align="center">
-						<a href="ShopCartServlet?pid=${p.id}&toDo=${"remove"}" onclick="del()">移除</a>
+						<a href="ShopCartServlet?pid=${p.id}&toDo=${"remove"}" >移除</a>
 					</div>
 				</td>
 			</tr>

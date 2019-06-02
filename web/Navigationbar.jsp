@@ -46,10 +46,10 @@
 				品牌 <b class="caret"></b>
 			</a>
 			<ul class="dropdown-menu">
-				<li><a href="SearchServlet?key=${"华为"}">华为</a></li>
-				<li><a href="SearchServlet?key=${"苹果"}">苹果</a></li>
-				<li><a href="SearchServlet?key=${"小米"}">小米</a></li>
-				<li><a href="SearchServlet?key=${"三星"}">三星</a></li>
+				<li><a href="SearchServlet?key=${"华为"}" name="华为">华为</a></li>
+				<li><a href="SearchServlet?key=${"苹果"}" name="苹果">苹果</a></li>
+				<li><a href="SearchServlet?key=${"小米"}" name="小米">小米</a></li>
+				<li><a href="SearchServlet?key=${"三星"}" name="三星">三星</a></li>
 			</ul>
 		</li>
 		<li class="dropdown">
@@ -63,6 +63,7 @@
 				<li><a href="SearchServlet?key=${"笔记本"}">笔记本</a></li>
 			</ul>
 		</li>
+
 	</ul>
 </div>
 </body>
